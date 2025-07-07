@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>點擊計數器</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      font-size: 24px;
+      padding: 10px 20px;
+    }
+    #counterText {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>點擊計數器</h1>
+  <button onclick="incrementCounter()">點我！</button>
+  <div id="counterText">你還沒有點擊過</div>
+
+  <script>
+    let count = 0;
+    function incrementCounter() {
+      count++;
+      document.getElementById("counterText").innerText = `你已經點擊了 ${count} 次`;
+    }
+  </script>
+</body>
+</html>
