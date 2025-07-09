@@ -7,7 +7,6 @@
 <body>
   <h1 id="title">載入中...</h1>
   <p id="count"></p>
-  <img src="images/cat.jpg" alt="貓咪圖片" width="300" />
   <script>
     fetch('data.json')
       .then(response => response.json())
@@ -19,6 +18,7 @@
         console.error('讀取 JSON 失敗:', error);
       });
   </script>
+  <img src="images/cat.jpg" alt="貓咪圖片" width="300" />
   
 </body>
 </html>
